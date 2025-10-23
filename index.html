@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drill 2: Working on Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+      body {
+        background-color: #437C1E;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      input, button {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      input {
+        border: 1px solid;
+      }
+      button {
+        background-color: #B22222;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        background: darkgray;
+        padding: 15px;
+        border-radius: 5px;
+        max-width: 400px;
+        max-height: 200px;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><center>📇 String Showcase: My Basic Info</center></h1>
+
+      <label for="name"><center><b>Name:</b></center></label>
+      <input id="name" type="text" maxlength="30" />
+
+      <label for="age"><center><b>Age:</b></center></label>
+      <input id="age" type="number" max="120" min="1" />
+
+      <label for="school"><center><b>School:</b></center></label>
+      <input id="school" type="text" maxlength="50" />
+
+      <button id="submit-btn">Generate Message</button>
+
+    <div id="output"></div>
+
+    <py-config>
+      [[fetch]]
+      files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="./main.py"></script>
+  </body>
+</html>
